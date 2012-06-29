@@ -1,0 +1,17 @@
+QRPlop is a site to enable people to do stupid things with QR codes.
+
+At the very least we're going to allow you to easilly make a qr code that links to an image.
+
+I'm thinking of adding qrs that point to markdown text, redirects, and maybe something fun like
+scavenger hunts, so like you can't actually access a QR code until your session has visited a 
+previous QR code in a previous browser session.  I don't know yet.
+
+Hopefully it won't suck.  I'm planning on hosting it on dotcloud, and at the very least it's
+going to have:
+
+nginx
+dancer
+mongo
+s3
+
+but we'll see.

@@ -1,0 +1,4 @@
+host: 'mongodb://staff.mongohq.com:10065'
+database: 'qrplop-sandbox'
+username: 'writer'
+password: '1q2w3e4r'

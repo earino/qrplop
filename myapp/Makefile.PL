@@ -19,6 +19,8 @@ WriteMakefile(
 	'Plack::Request' => '0.9976',
 	'Template' => '2.24',
 	'Data::Dump' => '1.21',
+	'Imager::QRCode' => '0.033',
+	'String::Random' => '0.22',
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'dancer_bootstrap_fontawesome_template-*' },

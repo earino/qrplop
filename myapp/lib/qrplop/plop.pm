@@ -5,6 +5,8 @@ package qrplop::plop 1.0 {
 	use MongoDB::Connection;
 	use MongoDB::OID;
 	
+	use Data::Dump qw/dump/;
+	
 	has 'mongo' => (
 		is => 'rw',
 	);
@@ -20,9 +22,17 @@ package qrplop::plop 1.0 {
 		my $db_name = $config->{'database'};
 		my $database   = $connection->$db_name;
 		
-		$self->mongo()
+		$self->mongo($database);
 		
 		my $collection = $database->anonymous;
+	}
+	
+	sub make {
+		my ($self, %keys) = @_;
+	
+		foreach my $key (keys %keys) {
+			print "key $key value ".$keys{$key}."\n";
+		}
 	}
 	
 	no Moose;

@@ -4,3 +4,4 @@ String::Random
 Data::Dump
 Imager::QRCode
 Template
+Moose

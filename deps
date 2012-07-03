@@ -1,3 +1,4 @@
+Amazon::S3
 YAML
 MongoDB
 String::Random
@@ -5,3 +6,6 @@ Data::Dump
 Imager::QRCode
 Template
 Moose
+MooseX::Method::Signatures
+File::MMagic
+Math::Base36

@@ -28,12 +28,11 @@ package qrplop::plop 1.0 {
 		my $collection = $database->anonymous;
 	}
 	
-	sub make {
-		my ($self, %keys) = @_;
-	
-		foreach my $key (keys %keys) {
-			print "key $key value ".$keys{$key}."\n";
-		}
+	sub make(Str :$path) {
+		# take the path, hash it, come up with a string value, 10 digits or so
+		# store the path with that value as the key, then come up with a qr
+		# code for that stupid http://qrplop/10digitvalue, that's really all
+		# you freaking have to do, man.
 	}
 	
 	no Moose;

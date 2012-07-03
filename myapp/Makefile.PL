@@ -23,7 +23,10 @@ WriteMakefile(
 		'Imager::QRCode' => '0.033',
 		'String::Random' => '0.22',
 		'Moose' => '2.0603',
-		'MooseX::Method::Signatures' => '0.43'
+		'MooseX::Method::Signatures' => '0.43',
+		'Amazon::S3' => '0.45',
+		'File::MMagic' => '1.28',
+		'Math::Base36' => '0.09',
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'dancer_bootstrap_fontawesome_template-*' },

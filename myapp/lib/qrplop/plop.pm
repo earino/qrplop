@@ -5,7 +5,12 @@ package qrplop::plop 1.0 {
 	use MongoDB::Connection;
 	use MongoDB::OID;
 	
+	has 'mongo' => (
+		is => 'rw',
+	);
+	
 	sub BUILD {
+		my $self = shift;
 		my $config = LoadFile("$FindBin::Bin/../../etc/mongo.yml");
 
 		my $connection = MongoDB::Connection->new(host => $config->{'host'},
@@ -14,6 +19,9 @@ package qrplop::plop 1.0 {
 							  password => $config->{'password'});
 		my $db_name = $config->{'database'};
 		my $database   = $connection->$db_name;
+		
+		$self->mongo()
+		
 		my $collection = $database->anonymous;
 	}
 	

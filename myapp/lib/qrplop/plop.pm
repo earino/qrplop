@@ -1,5 +1,6 @@
 package qrplop::plop 1.0 {
 	use Moose;
+	use MooseX::Method::Signatures;
 	use YAML qw/LoadFile/;
 	use FindBin;
 	use MongoDB::Connection;

@@ -5,3 +5,4 @@ Data::Dump
 Imager::QRCode
 Template
 Moose
+MooseX::Method::Signatures
